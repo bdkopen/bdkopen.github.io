@@ -1,0 +1,19 @@
+
+.multiworld-color {
+	background-color: #989ba0;
+	padding: 2px;
+	vertical-align: middle;
+	margin: 2px;
+	
+}
+.multiworld-color:hover {
+	background-color: #888b91;
+}
+
+.tab-image {
+	/*float: left;*/
+}
+
+.tab-text {
+	float: left;
+}

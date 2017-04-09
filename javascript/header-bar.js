@@ -1,0 +1,3 @@
+var headerbar = document.getElementById("header-bar");
+
+headerbar.innerHTML = '<div class="dropdown"><button class="dropbtn">Games</button><div class="dropdown-content"><a href="universes/index.html">Universe Generator</a><a href="#">Coming soon...</a></div></div><div class="dropdown"><button class="dropbtn">Tools</button><div class="dropdown-content"><a href="nameGenerator/index.html">Name Generator</a><a href="#">Coming soon...</a></div></div>';
