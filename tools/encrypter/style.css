@@ -1,0 +1,26 @@
+#buttonWrapper {
+	float: left;
+	margin: 5px;
+	width: 100%;
+}
+
+#buttonEncrypt, #buttonDecrypt, #inputEncryptionID {
+	float: left;
+	margin: 5px;
+	width: 20%;
+	background-color: #46e27f;
+}
+
+#inputEncryptionID {
+	overflow: hidden;
+}
+
+#buttonEncrypt:hover, #buttonDecrypt:hover, #inputEncryptionID:hover {
+	background-color: #3bce70;
+}
+
+#inputWrapper {
+	float: left;
+	margin: 5px;
+	width: 60%;
+}
