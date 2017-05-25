@@ -35,4 +35,5 @@ for(var b = 0; b < world.length; b++) {
 
 var openMultiworld = function() {
 	
-}
+};
+
