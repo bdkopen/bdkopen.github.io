@@ -10,11 +10,11 @@ var inputEncryptionID = document.getElementById("inputEncryptionID");
 
 //fromCharCode
 function textToCode(text, multiplier) {
-	return String.fromCharCode(text.charCodeAt()*multiplier);
+	return String.fromCharCode(Math.floor(text.charCodeAt()*multiplier));
 };
 
 function codeToText(text, multiplier) {
-	return String.fromCharCode(text.charCodeAt()/multiplier);
+	return String.fromCharCode(Math.floor(text.charCodeAt()/multiplier));
 
 };
 
@@ -32,5 +32,14 @@ function decryptCode(string, multiplier) {
 	}
 };
 
+function inputEncryptionIdValueCheck() {
+	if(inputEncryptionID.value > 1000) {
+		inputEncryptionID.value = 1000;
+	} else if(inputEncryptionID.value < 1) {
+		inputEncryptionID.value = 1;
+	}
+}
+
 buttonEncrypt.addEventListener('click', function() {encryptCode(input.value, inputEncryptionID.value)} );
 buttonDecrypt.addEventListener('click', function() {decryptCode(input.value, inputEncryptionID.value)} );
+inputEncryptionID.addEventListener("keyup", inputEncryptionIdValueCheck);

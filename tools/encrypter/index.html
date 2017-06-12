@@ -16,13 +16,13 @@
 		<h2>Message Encryptor Generator<hr></h2>
 		
 		<!-- Brief description of webpage. -->
-		<p>Welcome to bdkopen's custom message encryptor and decrypter!</p>
+		<p>Welcome to bdkopen's custom message encryptor and decrypter!<br><br>Please be aware that channels above 550 can receive some static characters.</p>
 		<!-- Buttons that due certain actions -->
         <div id="buttonWrapper">
             <input type="button" value="Encrypt Code" id="buttonEncrypt">
             <input type="button" value="Decrypt" id="buttonDecrypt">
             
-            <textarea id="inputEncryptionID" rows="1" cols="5"type="text" placeholder="CodeID">2</textarea>
+            <input id="inputEncryptionID" type="number" max="1000" min="1" placeholder="Channel ID" defaultValue="2">
             
             <div id="inputWrapper">
                 <textarea type="text" rows="5" cols="35" placeholder="Insert a message to encrypt or paste a message to decode." id="input"></textarea>
