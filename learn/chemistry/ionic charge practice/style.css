@@ -1,0 +1,20 @@
+#questionElement {
+	font-weight: bold;
+}
+
+.boxes {
+	display: flex;
+  	justify-content: center;
+}
+
+#question {
+	display: block;
+  	justify-content: flex-start;
+	width: 50%;
+}
+
+#stats {
+	display: block;
+  	justify-content: flex-start;
+	width: 50%;
+}

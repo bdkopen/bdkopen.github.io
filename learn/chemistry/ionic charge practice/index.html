@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="bdkopen Home" content="Learn - Chemistry - Ionic Charge Practice" />
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="../../../css/global.css"/>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<title>Home</title>
+	</head>
+	
+    <body>
+		
+		<!--Set the div for the header bar. Import a js file that runs a specific script to set a universal header amongst all the pages.-->
+		<div id="header-bar"><p>Hello! If you are reading this, you most likely have javascript disabled. Try reloading the page or enabling javascript.</p></div>
+		<script src="../../../javascript/header-bar.js"></script>
+		<div class="boxes">
+		<div id="question">
+			<p>What is the ionic charge of <span id="questionElement"></span></p>
+			<input type="number" min="-3" max="3" id="questionCharge"><button id="questionSubmit">Submit</button>
+			<p id="questionOutput"></p>
+		</div>
+		<div id="stats">
+			<p>Total Right: <span id="totalRight"></span></p>
+			<p>Total Wrong: <span id="totalWrong"></span></p>
+		</div>
+		</div>
+		
+		<script src="code.js"></script>
+		
+	</body>
+</html>
