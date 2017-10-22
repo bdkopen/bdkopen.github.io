@@ -73,7 +73,6 @@ var updateLavaLamp = function() {
                 }
             }
         }
-        //console.log(lava_lamp[a]);
     }
     displayLavaLamp();
     setTimeout(updateLavaLamp, 2000);
@@ -93,13 +92,8 @@ var displayLavaLamp = function() {
             }
         }
         output.innerHTML += t;
-        
     }
-    
 }
-
-
 
 //First call
 updateLavaLamp();
-console.log(output.innerHTML);
