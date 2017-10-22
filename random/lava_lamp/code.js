@@ -76,7 +76,7 @@ var updateLavaLamp = function() {
         //console.log(lava_lamp[a]);
     }
     displayLavaLamp();
-    setTimeout(updateLavaLamp, 5000);
+    setTimeout(updateLavaLamp, 2000);
 }
 
 var displayLavaLamp = function() {
