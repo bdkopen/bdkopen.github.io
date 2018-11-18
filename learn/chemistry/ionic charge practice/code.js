@@ -59,7 +59,7 @@ function testAnswer() {
 		totals.right++;
 		document.getElementById("nextQuestion").addEventListener("click", nextQuestion);
 	} else {
-		questionOutput.innerHTML = ("Incorrect! The correct answer was " + elements[questionVariables[0]][0] + ". <button id='nextQuestion'>Next question!</button>");
+		questionOutput.innerHTML = ("Incorrect! <br> The correct answer was " + elements[questionVariables[0]][0] + ". <br><button id='nextQuestion'>Next question!</button>");
 
 		totals.wrong++;
 		document.getElementById("questionSubmit").disabled = true;
