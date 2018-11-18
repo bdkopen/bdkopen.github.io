@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="bdkopen Home" content="eBay Fee Calculator" />
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="../../../css/global.css"/>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<title>Home</title>
+	</head>
+	
+    <body>
+		
+		<!--Set the div for the header bar. Import a js file that runs a specific script to set a universal header amongst all the pages.-->
+		<div id="header-bar"><p>Hello! If you are reading this, you most likely have javascript disabled. Try reloading the page or enabling javascript.</p></div>
+		<script src="../../../javascript/header-bar.js"></script>
+        
+        <!-- Title header -->
+		<h2>eBay Fee Calculator<hr></h2>
+		
+		<!-- Brief description of webpage. -->
+		<p>Welcome to bdkopen's eBay Fee Calculator. Enter in the numbers for your item to determine how much you profit!<br>Please beware that this calculator may not be 100% accurate and may vary a few dollars.</p>
+        
+        <div id="inputDivider" class="inputs">
+        
+            <h5>Amount Paid</h5>
+            <input type="number" value="Amount Paid" id="inputAmountPaid" min="0" step=".01">
+            
+            <h5>Shipping Payment</h5>
+            <input type="number" value="Shipping Payment" id="inputShippingPayment" min="0" step=".01">
+            
+            <h5>Shipping Cost</h5>
+            <input type="number" value="Shipping Cost" id="inputShippingCost" min="0" step=".01">
+            
+            <h5>Initial Product Cost</h5>
+            <input type="number" value="Initial Product Cost" id="inputInitProductCost" min="0" step=".01">
+            
+            <br>
+            <input id="inputButtonCalculate"  class="greenButton" type="button" value="Calculate">
+        
+            
+        </div>
+        
+        <div id="outputDivider">
+            
+            <hr width="200px" align="left">
+            
+            Initial Cost: $
+            <span id="outputAmountPaid"></span><br>
+            Shipping Payment: $
+            <span id="outputShippingPayment"></span><br>
+            
+            <hr width="200px" align="left">
+            
+            Shipping Cost: -$
+            <span id="outputShippingCost"></span><br>
+            PayPal Fees: -$
+            <span id="outputPayPalFees"></span><br>
+            eBay Fees: -$
+            <span id="outputEbayFees"></span><br>
+            Initial Product Cost: -$
+            <span id="outputInitProductCost"></span><br>
+            
+            <hr width="200px" align="left">
+            
+            Total Profit: $
+            <span id="outputTotal"></span>
+            
+        </div>
+		
+		<script src="code.js"></script>
+		
+	</body>
+</html>

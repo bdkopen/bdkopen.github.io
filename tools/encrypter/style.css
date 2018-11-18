@@ -11,13 +11,15 @@
 	background-color: #46e27f;
 }
 
+#buttonEncrypt:hover, #buttonDecrypt:hover, #inputEncryptionID:hover {
+	background-color: #3bce70;
+}
+
 #inputEncryptionID {
 	overflow: hidden;
 }
 
-#buttonEncrypt:hover, #buttonDecrypt:hover, #inputEncryptionID:hover {
-	background-color: #3bce70;
-}
+
 
 #inputWrapper {
 	float: left;
