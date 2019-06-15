@@ -42,3 +42,11 @@
 #header-bar:hover {
 	background-color: #66ba69;
 }
+
+h2 {
+	background-color: #4CAF50;
+    margin-top: 0px;
+    padding: 6px;
+}
+
+

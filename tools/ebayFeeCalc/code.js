@@ -15,7 +15,7 @@ var outputInitProductCost = document.getElementById("outputInitProductCost");
 var outputTotal = document.getElementById("outputTotal");
 
 function roundDoubleDecimals(input) {
-    return Math.round(input*100)/100;
+    return Math.ceil(input*100)/100;
 }
 
 function calculate() {
@@ -33,7 +33,6 @@ function calculate() {
     
     outputTotal.textContent = roundDoubleDecimals(
         parseFloat(outputAmountPaid.textContent) + parseFloat(outputShippingPayment.textContent) - parseInt(outputShippingCost.textContent) - parseFloat(outputPayPalFees.textContent) - parseFloat(outputEbayFees.textContent) - parseFloat(outputInitProductCost.textContent));
-
 }
 
 
