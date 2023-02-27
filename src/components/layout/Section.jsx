@@ -46,7 +46,7 @@ const SectionColumn = (props) => {
         <div 
             className={
                 clsx(
-                    `flex flex-col flex-[1_1_fit-content] min-h-fit overflow-auto`,   
+                    `flex flex-col flex-[1_1_fit-content] overflow-auto`,   
                     props.className,
                     /* `flex flex-col flex-initial overflow-auto`,  */
                 )

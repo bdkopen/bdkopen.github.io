@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-        <SectionRow className="w-[120%]">
+        <SectionRow>
           <SectionColumn className="grow basis-[50%]">
             <Heading alignment="text-center">
               Hello There
