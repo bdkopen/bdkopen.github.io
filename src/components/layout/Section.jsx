@@ -28,7 +28,8 @@ const SectionRow = (props) => {
         <div 
             className={
                 clsx(
-                    `flex flex-row flex-[1_1_fit-content] min-h-fit overflow-auto`,
+                    `flex flex-row flex-initial min-h-fit overflow-auto`,
+                    `items-stretch`,
                     props.className,
                     /* `flex flex-row flex-initial overflow-auto`, */
                 )
@@ -46,7 +47,7 @@ const SectionColumn = (props) => {
         <div 
             className={
                 clsx(
-                    `flex flex-col flex-[1_1_fit-content] overflow-auto`,   
+                    `flex flex-col flex-initial overflow-auto`,   
                     props.className,
                     /* `flex flex-col flex-initial overflow-auto`,  */
                 )
