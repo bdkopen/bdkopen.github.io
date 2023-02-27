@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import clsx from "clsx";
 
 const Section = (props) => {
 
@@ -20,7 +21,44 @@ const Section = (props) => {
         </div>
     </>;
 }
+// Display it's children in a column.
+const SectionRow = (props) => {
+
+    return (
+        <div 
+            className={
+                clsx(
+                    `flex flex-row flex-[1_1_fit-content] min-h-fit overflow-auto`,
+                    props.className,
+                    /* `flex flex-row flex-initial overflow-auto`, */
+                )
+            }
+        >
+            {props.children}
+        </div>
+    );
+}
+
+// Display it's children in a column.
+const SectionColumn = (props) => {
+
+    return (
+        <div 
+            className={
+                clsx(
+                    `flex flex-col flex-[1_1_fit-content] min-h-fit overflow-auto`,   
+                    props.className,
+                    /* `flex flex-col flex-initial overflow-auto`,  */
+                )
+            }
+        >
+            {props.children}
+        </div>
+    );
+}
 
 export {
     Section,
+    SectionRow,
+    SectionColumn
 };

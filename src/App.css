@@ -4,6 +4,9 @@
 
 .App {
   text-align: center;
+
+  width: 100%;
+  height: 100%;
 }
 
 .App-logo {
@@ -26,6 +29,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  width: 100%;
+  height: 100%;
 }
 
 .App-link {
@@ -39,4 +45,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body, html, #root {
+  width: 100vw;
+  height: 100vh;
 }
